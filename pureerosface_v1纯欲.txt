@@ -1,0 +1,15 @@
+1. prompt
+
+[:(detailed face:1.2):0.2]: When drawing high-quality faces, do not use the "detail face" tag at 0 steps, otherwise it may lead to deviation from the original semantics of embedding
+
+shiny eyes, looking at viewer: If your generated faces often close their eyes, adding "shiny eyes, looking at viewer" will open them instantly
+
+2. negative prompt:
+
+long hair: add it to fix some errors caused by training data bias...(although it does not always affect the output, my experiments found that it seems that the length of the hair in a certain scene will affect the quality of the clothes. In short, the relationship is very subtle, you can try to control the length of the hair to change the outfit quality)
+
+full body: Most of the data set is close-up, so it doesn't perform well on the "full body" scene, I'm trying to fix it in the next version
+
+disabled body: If a deformed body structure is produced, please add it
+
+DeepNegative: A negative embedding I released can be used with PureErosFace very well, it is recommended to tr
